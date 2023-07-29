@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agreen Survey</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="http://www.agreen-co.com/wp-content/uploads/2022/12/Asset-90-1-1-1-1-1-1-1-1-1-1.png "
+      sizes="50x32"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="text-center">
+        <img
+          id="logo"
+          class="survey-logo"
+          src="assets/agreen.png"
+          alt="Agreen Logo"
+        />
+        <h1 id="description">KYC SURVEY</h1>
+      </header>
+      <form action="#" id="survey-form" class="form-label">
+        <div class="form-group">
+          <h2>Please answer below questions</h2>
+          <div class="hint-of-header">
+            Questions with (<span style="color: red">*</span>) must be answered
+          </div>
+          <label for="name" id="name-label">Company Name</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            placeholder="Enter company name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="office-address" id="office-label"
+            >Office Address <span style="color: red">*</span></label
+          >
+          <input
+            type="text"
+            id="office-address"
+            class="form-control"
+            placeholder="Enter office address"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="mobile" id="mobile-label">Mobile</label>
+          <input
+            id="mobile"
+            class="form-control"
+            placeholder="Enter your mobile"
+          />
+        </div>
+        <div class="form-group">
+          <label for="telephone" id="telephone-label">Office Telephone</label>
+          <input
+            id="telephone"
+            class="form-control"
+            placeholder="Enter your office telephone"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="fax" id="fax-label">Office Fax</label>
+          <input
+            id="fax"
+            class="form-control"
+            placeholder="Enter your office fax"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="po" id="po-label">PO Box</label>
+          <input id="po" class="form-control" placeholder="Enter your PO Box" />
+        </div>
+
+        <div class="form-group">
+          <label for="email" id="email-label"
+            >Email <span style="color: red">*</span></label
+          >
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter e-mail address"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="activities" id="activities-label"
+            >DETAILED ACTIVITIES OF COMPANY/ COUNTRY OPERATIONAL
+            <span style="color: red">*</span></label
+          >
+          <textarea
+            name="activities"
+            id="activities"
+            cols="50"
+            rows="6"
+            placeholder="Enter detailed activities here..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="client-decription" id="client-decription-label"
+            >Client DECRIPTION (Wholesaler - Retaller- Distributor -
+            Other)</label
+          >
+          <input
+            id="client-decription"
+            class="form-control"
+            placeholder="Enter decription here"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="background-of-company" id="background-of-company-label"
+            >BACKGROUND OF COMPANY</label
+          >
+          <input
+            id="background-of-company"
+            class="form-control"
+            placeholder="Enter background of company"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="nature-of-business" id="nature-of-business-label"
+            >NATURE OF BUSINESS</label
+          >
+          <input
+            id="nature-of-business"
+            class="form-control"
+            placeholder="Enter nature of business"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="associate-companies" id="associate-companies-label"
+            >ASSOCIATE COMPANIES</label
+          >
+          <input
+            id="associate-companies"
+            class="form-control"
+            placeholder="Enter the associate companies"
+          />
+        </div>
+        <div class="form-group">
+          <label for="customers" class="table-label" id="customers-label"
+            >CUSTOMERS</label
+          >
+
+          <div class="table table-customers">
+            <div class="table-row">
+              <div class="table-cell header">Customer Name</div>
+              <div class="table-cell header">Origin</div>
+              <div class="table-cell header last-child-header">Product</div>
+            </div>
+            <div class="table-row">
+              <textarea
+                class="table-area"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+                required
+              ></textarea>
+              <textarea
+                class="table-area"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+                required
+              ></textarea>
+              <textarea
+                class="table-area last-child"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+
+            <!-- <div class="table-row">
+              <div class="table-cell">Jane Smith</div>
+              <div class="table-cell">25</div>
+              <div class="table-cell">Designer</div>
+            </div> -->
+          </div>
+        </div>
+        <div class="control-buttons-customers">
+          <button
+            type="button"
+            class="submit add-remove"
+            id="add-row-btn-customers"
+          >
+            <span class="submit-text">Add row</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </button>
+          <button
+            type="button"
+            id="remove-row-btn-customers"
+            class="submit add-remove remove-color disabled-button"
+          >
+            <span class="submit-text">Remove row</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="form-group">
+          <label for="suppliers" class="table-label" id="suppliers-label"
+            >SUPPLIERS</label
+          >
+
+          <div class="table table-suppliers">
+            <div class="table-row">
+              <div class="table-cell header">Supplier Name</div>
+              <div class="table-cell header">Origin</div>
+              <div class="table-cell header last-child-header">Product</div>
+            </div>
+            <div class="table-row">
+              <textarea
+                class="table-area"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+              ></textarea>
+              <textarea
+                class="table-area"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+              ></textarea>
+              <textarea
+                class="table-area last-child"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="control-buttons-customers">
+          <button
+            type="button"
+            class="submit add-remove"
+            id="add-row-btn-suppliers"
+          >
+            <span class="submit-text">Add row</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </button>
+          <button
+            type="button"
+            id="remove-row-btn-suppliers"
+            class="submit add-remove remove-color disabled-button"
+          >
+            <span class="submit-text">Remove row</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="form-group">
+          <label
+            for="name-of-product"
+            class="table-label"
+            id="name-of-product-label"
+            >Name of Product Range handled by the company (Fruits and
+            Vegetables)</label
+          >
+
+          <div class="table table-name-of-products">
+            <div class="table-row">
+              <div class="table-cell header">Fruits / Veg Group name</div>
+              <div class="table-cell header">Variety</div>
+              <div class="table-cell header">Origin</div>
+              <div class="table-cell header last-child-header">
+                Quality per ton
+              </div>
+            </div>
+
+            <div class="table-row">
+              <textarea
+                class="table-area"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+                required
+              ></textarea>
+              <textarea
+                class="table-area"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+                required
+              ></textarea>
+              <textarea
+                class="table-area"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+                required
+              ></textarea>
+              <textarea
+                class="table-area last-child"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="control-buttons-customers">
+          <button
+            type="button"
+            class="submit add-remove"
+            id="add-row-btn-name-of-products"
+          >
+            <span class="submit-text">Add row</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </button>
+          <button
+            type="button"
+            id="remove-row-btn-name-of-products"
+            class="submit add-remove remove-color disabled-button"
+          >
+            <span class="submit-text">Remove row</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="form-group">
+          <label for="citrus" class="table-label" id="citrus-label"
+            >Annual Imported volume for Egyptian Citrus</label
+          >
+
+          <div class="table table-egyption-citrus">
+            <div class="table-row">
+              <div class="table-cell header">Egyptian Citrus Variety</div>
+              <textarea
+                class="table-area"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+                required
+              ></textarea>
+              <textarea
+                class="table-area"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+                required
+              ></textarea>
+              <textarea
+                class="table-area last-child"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+            <div class="second table-row">
+              <div class="table-cell header" style="padding-right: 18.2px">
+                Annual Quantity
+              </div>
+
+              <textarea
+                class="table-area"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+                required
+              ></textarea>
+              <textarea
+                class="table-area"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+                required
+              ></textarea>
+              <textarea
+                class="table-area last-child"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="citrus" class="table-label" id="citrus-label"
+            >Annual Imported citrus volume from other countris</label
+          >
+
+          <div class="table table-egyption-citrus">
+            <div class="table-row">
+              <div class="table-cell header">Country Citrus Variety</div>
+
+              <textarea
+                class="table-area"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+              ></textarea>
+              <textarea
+                class="table-area"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+              ></textarea>
+              <textarea
+                class="table-area last-child"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="second table-row">
+              <div class="table-cell header" style="padding-right: 11.2px">
+                Annual Quantity
+              </div>
+
+              <textarea
+                class="table-area"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+              ></textarea>
+              <textarea
+                class="table-area"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+              ></textarea>
+              <textarea
+                class="table-area last-child"
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="3"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label
+            for="turnover-annual-expected"
+            id="turnover-annual-expected-label"
+            >TURNOVER ANNUAL EXPECTED</label
+          >
+          <input
+            id="turnover-annual-expected"
+            class="form-control"
+            placeholder="Enter turnover annual expected"
+          />
+        </div>
+        <div class="form-group">
+          <label for="net-profit" id="net-profit-label">NET PROFIT</label>
+          <input
+            id="net-profit"
+            class="form-control"
+            placeholder="Enter net profit"
+          />
+        </div>
+        <div class="form-group">
+          <label
+            for="number-of-warehouses-and-offices-owned"
+            id="number-of-warehouses-and-offices-owned-label"
+            >Number of warehouses and offices owned</label
+          >
+          <input
+            id="number-of-warehouses-and-offices-owned"
+            class="form-control"
+            placeholder="Enter number of warehouses and offices owned"
+          />
+        </div>
+        <div class="form-group">
+          <label for="no.of-employee" id="no.of-employee-label"
+            >NO.OF EMPLOYEE <span style="color: red">*</span></label
+          >
+          <input
+            id="no.of-employee"
+            class="form-control"
+            placeholder="Enter no.of employee"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="website" id="website-label"
+            >WEBSITE <span style="color: red">*</span></label
+          >
+          <input
+            id="website"
+            class="form-control"
+            placeholder="Enter the website"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label
+            for="cold-rooms-owned-by-the-company-and-its-capacity"
+            id="cold-rooms-owned-by-the-company-and-its-capacity-label"
+            >Cold Rooms owned by the Company and its capacity</label
+          >
+          <input
+            id="cold-rooms-owned-by-the-company-and-its-capacity"
+            class="form-control"
+            placeholder="Enter cold rooms owned by the company and its capacity"
+          />
+        </div>
+        <div class="form-group">
+          <label
+            for="name-of-cities-and-countries-in-which-company-are-selling"
+            id="name-of-cities-and-countries-in-which-company-are-selling-label"
+            >Name of Cities and Countries in which company are selling</label
+          >
+          <input
+            id="name-of-cities-and-countries-in-which-company-are-selling"
+            class="form-control"
+            placeholder="Enter name of cities and countries in which company are selling"
+          />
+        </div>
+        <div class="form-group">
+          <label
+            for="places-of-company-branches-over-the world"
+            id="places-of-company-branches-over-the world-label"
+            >Places of Company Branches over the World</label
+          >
+          <input
+            id="places-of-company-branches-over-the world"
+            class="form-control"
+            placeholder="Enter places of company branches over the world"
+          />
+        </div>
+        <div class="form-group">
+          <p>Additional information</p>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="50"
+            rows="6"
+            placeholder="Enter additional information..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="submit">
+            <span class="submit-text">Submit</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="32"
+              height="32"
+              viewBox="0,0,256,256"
+              style="fill: #000000"
+            >
+              <g
+                fill="#ffffff"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal"
+              >
+                <g transform="scale(8,8)">
+                  <path
+                    d="M26.07031,3.99609c-0.33594,0.01563 -0.65234,0.11328 -0.93359,0.22266h-0.00391c-0.28516,0.11328 -1.64062,0.68359 -3.69922,1.54688c-2.05859,0.86719 -4.73047,1.99219 -7.38281,3.10938c-5.29687,2.23047 -10.50391,4.42578 -10.50391,4.42578l0.0625,-0.02344c0,0 -0.35937,0.11719 -0.73437,0.375c-0.19141,0.125 -0.40234,0.29688 -0.58594,0.56641c-0.18359,0.26953 -0.33203,0.68359 -0.27734,1.10938c0.08984,0.72266 0.55859,1.15625 0.89453,1.39453c0.33984,0.24219 0.66406,0.35547 0.66406,0.35547h0.00781l4.88281,1.64453c0.21875,0.70313 1.48828,4.875 1.79297,5.83594c0.17969,0.57422 0.35547,0.93359 0.57422,1.20703c0.10547,0.14063 0.23047,0.25781 0.37891,0.35156c0.05859,0.03516 0.12109,0.0625 0.18359,0.08594c0.01953,0.01172 0.03906,0.01563 0.0625,0.01953l-0.05078,-0.01172c0.01563,0.00391 0.02734,0.01563 0.03906,0.01953c0.03906,0.01172 0.06641,0.01563 0.11719,0.02344c0.77344,0.23438 1.39453,-0.24609 1.39453,-0.24609l0.03516,-0.02734l2.88281,-2.625l4.83203,3.70703l0.10938,0.04688c1.00781,0.44141 2.02734,0.19531 2.56641,-0.23828c0.54297,-0.4375 0.75391,-0.99609 0.75391,-0.99609l0.03516,-0.08984l3.73438,-19.12891c0.10547,-0.47266 0.13281,-0.91406 0.01563,-1.34375c-0.11719,-0.42969 -0.41797,-0.83203 -0.78125,-1.04687c-0.36719,-0.21875 -0.73047,-0.28516 -1.06641,-0.26953zM25.96875,6.04688c-0.00391,0.0625 0.00781,0.05469 -0.01953,0.17578v0.01172l-3.69922,18.92969c-0.01562,0.02734 -0.04297,0.08594 -0.11719,0.14453c-0.07812,0.0625 -0.14062,0.10156 -0.46484,-0.02734l-5.91016,-4.53125l-3.57031,3.25391l0.75,-4.78906c0,0 9.25781,-8.62891 9.65625,-9c0.39844,-0.37109 0.26563,-0.44922 0.26563,-0.44922c0.02734,-0.45312 -0.60156,-0.13281 -0.60156,-0.13281l-12.17578,7.54297l-0.00391,-0.01953l-5.83594,-1.96484v-0.00391c-0.00391,0 -0.01172,-0.00391 -0.01562,-0.00391c0.00391,0 0.03125,-0.01172 0.03125,-0.01172l0.03125,-0.01562l0.03125,-0.01172c0,0 5.21094,-2.19531 10.50781,-4.42578c2.65234,-1.11719 5.32422,-2.24219 7.37891,-3.10937c2.05469,-0.86328 3.57422,-1.49609 3.66016,-1.53125c0.08203,-0.03125 0.04297,-0.03125 0.10156,-0.03125z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

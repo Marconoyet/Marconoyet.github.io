@@ -254,7 +254,8 @@ textarea:focus-visible {
   margin-bottom: 3rem;
 }
 
-.table-row {
+.table-row,
+.table-row-header {
   display: flex;
   flex: 1;
 }

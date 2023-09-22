@@ -53,7 +53,6 @@
             id="office-address"
             class="form-control"
             placeholder="Enter office address"
-            required
           />
         </div>
 
@@ -97,7 +96,6 @@
             id="email"
             class="form-control"
             placeholder="Enter e-mail address"
-            required
           />
         </div>
         <div class="form-group">
@@ -111,7 +109,6 @@
             cols="50"
             rows="6"
             placeholder="Enter detailed activities here..."
-            required
           ></textarea>
         </div>
 
@@ -165,7 +162,7 @@
           >
 
           <div class="table table-customers">
-            <div class="table-row">
+            <div class="table-row-header">
               <div class="table-cell header">Customer Name</div>
               <div class="table-cell header">Origin</div>
               <div class="table-cell header last-child-header">Product</div>
@@ -177,7 +174,6 @@
                 id="comment"
                 cols="50"
                 rows="3"
-                required
               ></textarea>
               <textarea
                 class="table-area"
@@ -185,7 +181,6 @@
                 id="comment"
                 cols="50"
                 rows="3"
-                required
               ></textarea>
               <textarea
                 class="table-area last-child"
@@ -193,7 +188,6 @@
                 id="comment"
                 cols="50"
                 rows="3"
-                required
               ></textarea>
             </div>
 
@@ -255,7 +249,7 @@
           >
 
           <div class="table table-suppliers">
-            <div class="table-row">
+            <div class="table-row-header">
               <div class="table-cell header">Supplier Name</div>
               <div class="table-cell header">Origin</div>
               <div class="table-cell header last-child-header">Product</div>
@@ -339,7 +333,7 @@
           >
 
           <div class="table table-name-of-products">
-            <div class="table-row">
+            <div class="table-row-header">
               <div class="table-cell header">Fruits / Veg Group name</div>
               <div class="table-cell header">Variety</div>
               <div class="table-cell header">Origin</div>
@@ -355,7 +349,6 @@
                 id="comment"
                 cols="50"
                 rows="3"
-                required
               ></textarea>
               <textarea
                 class="table-area"
@@ -363,7 +356,6 @@
                 id="comment"
                 cols="50"
                 rows="3"
-                required
               ></textarea>
               <textarea
                 class="table-area"
@@ -371,7 +363,6 @@
                 id="comment"
                 cols="50"
                 rows="3"
-                required
               ></textarea>
               <textarea
                 class="table-area last-child"
@@ -379,7 +370,6 @@
                 id="comment"
                 cols="50"
                 rows="3"
-                required
               ></textarea>
             </div>
           </div>
@@ -434,7 +424,7 @@
           >
 
           <div class="table table-egyption-citrus">
-            <div class="table-row">
+            <div class="table-row" id="egyptian-citrus">
               <div class="table-cell header">Egyptian Citrus Variety</div>
               <textarea
                 class="table-area"
@@ -442,7 +432,6 @@
                 id="comment"
                 cols="50"
                 rows="3"
-                required
               ></textarea>
               <textarea
                 class="table-area"
@@ -450,7 +439,6 @@
                 id="comment"
                 cols="50"
                 rows="3"
-                required
               ></textarea>
               <textarea
                 class="table-area last-child"
@@ -458,21 +446,18 @@
                 id="comment"
                 cols="50"
                 rows="3"
-                required
               ></textarea>
             </div>
-            <div class="second table-row">
+            <div class="second table-row" id="annual-quantity">
               <div class="table-cell header" style="padding-right: 18.2px">
                 Annual Quantity
               </div>
-
               <textarea
                 class="table-area"
                 name="comment"
                 id="comment"
                 cols="50"
                 rows="3"
-                required
               ></textarea>
               <textarea
                 class="table-area"
@@ -480,7 +465,6 @@
                 id="comment"
                 cols="50"
                 rows="3"
-                required
               ></textarea>
               <textarea
                 class="table-area last-child"
@@ -488,7 +472,6 @@
                 id="comment"
                 cols="50"
                 rows="3"
-                required
               ></textarea>
             </div>
           </div>
@@ -500,9 +483,8 @@
           >
 
           <div class="table table-egyption-citrus">
-            <div class="table-row">
+            <div class="table-row" id="country-citrus">
               <div class="table-cell header">Country Citrus Variety</div>
-
               <textarea
                 class="table-area"
                 name="comment"
@@ -525,7 +507,7 @@
                 rows="3"
               ></textarea>
             </div>
-            <div class="second table-row">
+            <div class="second table-row" id="country-annual-quantity">
               <div class="table-cell header" style="padding-right: 11.2px">
                 Annual Quantity
               </div>
@@ -592,10 +574,9 @@
             >NO.OF EMPLOYEE <span style="color: red">*</span></label
           >
           <input
-            id="no.of-employee"
+            id="no-of-employee"
             class="form-control"
             placeholder="Enter no.of employee"
-            required
           />
         </div>
         <div class="form-group">
@@ -606,7 +587,6 @@
             id="website"
             class="form-control"
             placeholder="Enter the website"
-            required
           />
         </div>
         <div class="form-group">
@@ -640,7 +620,7 @@
             >Places of Company Branches over the World</label
           >
           <input
-            id="places-of-company-branches-over-the world"
+            id="places-of-company-branches-over-the-world"
             class="form-control"
             placeholder="Enter places of company branches over the world"
           />
@@ -649,16 +629,15 @@
           <p>Additional information</p>
           <textarea
             name="comment"
-            id="comment"
+            id="additional-information"
             cols="50"
             rows="6"
             placeholder="Enter additional information..."
-            required
           ></textarea>
         </div>
 
         <div class="form-group">
-          <button type="submit" class="submit">
+          <button id="submit-survey" class="submit">
             <span class="submit-text">Submit</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
